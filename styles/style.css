@@ -5,18 +5,11 @@
   --color-text: #000;
 }
 
-body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p {
-  margin: 0;
-}
-
 .page {
+  margin: 0 auto;
   min-width: 1100px;
   max-width: 1600px;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-.centered-block {
-  margin: 0 auto;
 }
 
 /*** LOGO ***/
@@ -41,22 +34,11 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
   background-image: url(../images/logo_place_footer.svg);
 }
 
-/*** FLEX ***/
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
 /*** HEADER ***/
 
 .header {
   position: relative;
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -77,6 +59,7 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
   left: 64px;
   bottom: 30px;
   z-index: 3;
+  margin: 0;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -124,11 +107,14 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
 /*** TWO COLUMNS ***/
 
 .two-columns {
+  margin: 0 auto;
   width: 80%;
+  display: flex;
   justify-content: space-between;
 }
 
 .two-columns__brief {
+  margin: 0;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -142,7 +128,7 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
 }
 
 .two-columns__paragraph {
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
@@ -167,6 +153,7 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
 /*** SECTION - default ***/
 
 .section-title {
+  margin: 0 auto;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -175,6 +162,7 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
 }
 
 .section-subtitle {
+  margin: 0 auto;
   width: 60%;
   margin-top: 20px;
   line-height: 34px;
@@ -193,10 +181,13 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
 /*** TABLE - default ***/
 
 .table {
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 auto;
   width: 1100px;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 .table__cell {
@@ -206,6 +197,7 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -215,7 +207,7 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 }
 
 /*** TABLE - dark theme ***/
@@ -245,6 +237,7 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
 }
 
 .feynman__title {
+  margin: 0 auto;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
@@ -253,7 +246,7 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
 }
 
 .feynman__subtitle {
-  margin-top: 70px;
+  margin: 70px auto 0 auto;
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
@@ -293,6 +286,8 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
   z-index: -1;
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
 }
 
 /*** FOOTER ***/
@@ -302,19 +297,24 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
   box-sizing: border-box;
   min-height: 350px;
   padding: 60px 0 40px 0;
+  display: flex;
+  flex-direction: column;
   color: #fff;
   background-color: var(--color-backgr_dark);
 }
 
 .footer__columns {
-  justify-content: space-between;
-  align-self: stretch;
+  margin: 0 auto;
   width: 90%;
+  display: flex;
+  justify-content: space-between;
   flex-grow: 1;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -330,7 +330,7 @@ body, div, header, main, section, footer, img, h1, h2, h3, h4, h5, h6, table, p 
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
