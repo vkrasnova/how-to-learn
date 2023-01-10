@@ -60,6 +60,10 @@
 @import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);
 @import url(../blocks/table/__text/table__text.css);
 
+/*** OAKLEY ***/
+
+@import url(../blocks/oakley/oakley.css);
+
 /*** FEYNMAN ***/
 
 @import url(../blocks/feynman/feynman.css);
@@ -71,6 +75,13 @@
 
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
+
+/*** RESOURCES ***/
+
+@import url(../blocks/resources/resources.css);
+@import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
+@import url(../blocks/resources/__link/resources__link.css);
+@import url(../blocks/resources/__logo/resources__logo.css);
 
 /*** FOOTER ***/
 
