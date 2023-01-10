@@ -1,6 +1,7 @@
 .header__link {
   text-decoration: none;
   color: var(--color-primary);
+  transition: opacity .3s linear;
 }
 
 .header__link::before {
@@ -9,4 +10,8 @@
 
 .header__link::after {
   content: ' \2192';
+}
+
+.header__link:hover {
+  opacity: 0.7;
 }
