@@ -5,6 +5,7 @@
   color: var(--color-primary);
   text-decoration: none;
   transition: opacity .3s linear;
+  align-self: flex-start;
 }
 
 .khan__buy-link::after {

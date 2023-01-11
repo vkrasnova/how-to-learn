@@ -4,10 +4,6 @@
   transition: opacity .3s linear;
 }
 
-.header__link::before {
-  content: ' ';
-}
-
 .header__link::after {
   content: ' \2192';
 }
