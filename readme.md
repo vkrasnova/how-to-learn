@@ -12,6 +12,6 @@
 - Добавление новых видео;
 - Верстка аналогичного сайта, но с использованием CSS Grid Layout.
 
-***GitHub Pagesе***
+***GitHub Pages***
 
 [Перейти на сайт](https://vkrasnova.github.io/how-to-learn/ "Научиться учиться")
